@@ -32,7 +32,7 @@ new CommandHandler({
   commandsPath: path.join(__dirname, 'commands'),
   eventsPath: path.join(__dirname, 'events'),
   validationsPath: path.join(__dirname, 'validations'),
-  testServer: 'CloudOne',
+  testServer: '1270894006896951326',
 });
 
 // Log commands to verify they are loaded
@@ -69,7 +69,7 @@ client.on('interactionCreate', async interaction => {
   }
 });
 
-client.login(DISCORD_TOKEN).catch(error => {
+client.login(token).catch(error => {
   pogger.error('[CRASH]', 'Failed to login: ' + error);
 });
 // ShdwTakahi was here lol
